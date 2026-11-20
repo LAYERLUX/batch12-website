@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Order Request · Batch 12</title>
+<meta name="description" content="Batch 12: small-batch jams, salsas and pickles made with local Virginia produce in Haymarket, VA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><div class="wrap nav">
+  <a class="brand" href="index.html"><img src="logo.jpg" alt="Batch 12 logo"><span>Batch 12</span></a>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="flavors.html">Flavor Guide</a></li><li><a href="farm-to-jar.html">Farm to Jar</a></li><li><a href="story.html">Our Story</a></li><li><a href="find-us.html">Where to Buy</a></li><li><a href="order.html" aria-current="page">Order</a></li></ul></nav>
+</div></header>
+<main>
+<section class="page-hero on-lid"><div class="wrap">
+  <span class="script">Save me a jar!</span><h1>Order request</h1>
+  <p>Choose your flavors, jar sizes and how many you’d like. We’ll email you back to confirm availability, total and pickup or delivery details.</p>
+</div></section>
+<div class="gingham"></div>
+<section class="block"><div class="wrap order-wrap">
+  <form class="order-form" name="order-request" method="POST" action="order-thanks.html" data-netlify="true" netlify-honeypot="bot-field" id="orderForm">
+    <input type="hidden" name="form-name" value="order-request">
+    <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <fieldset><legend>Your details</legend>
+      <div class="row">
+        <label class="f" for="o-name">Full name<input type="text" id="o-name" name="name" required autocomplete="name"></label>
+        <label class="f" for="o-email">Email<input type="email" id="o-email" name="email" required autocomplete="email"></label>
+      </div>
+      <div class="row">
+        <label class="f" for="o-phone">Phone<input type="tel" id="o-phone" name="phone" required autocomplete="tel"></label>
+        <label class="f" for="o-date">Preferred pickup or delivery date<input type="date" id="o-date" name="preferred-date" required aria-describedby="o-turn"></label>
+      </div>
+      <p class="turnaround" id="o-turn"><b>Please note:</b> order fulfillment takes about 1 week. Please choose a date at least 7 days from today. We’ll confirm the exact date with you by email.</p>
+    </fieldset>
+    <fieldset><legend>What would you like?</legend>
+      <div class="picker">
+        <label class="f wide" for="p-flavor">Flavor<select id="p-flavor"><option value="">Choose a flavor…</option><optgroup label="Jams"><option value="smoked-heirloom-tomato-jam">Smoked Heirloom Tomato Jam</option><option value="peach-sriracha-jam">Peach Sriracha Jam</option><option value="white-peach-and-raspberry-jam">White Peach &amp; Raspberry Jam</option><option value="strawberry-almond-jam">Strawberry Almond Jam</option><option value="strawberry-vanilla-jam">Strawberry Vanilla Jam</option><option value="honey-lemon-apple-jam">Honey Lemon Apple Jam</option><option value="pineapple-jam">Pineapple Jam</option><option value="apple-rosemary-jam">Apple Rosemary Jam</option><option value="creamsicle-jam">Creamsicle Jam</option><option value="strawberry-thyme-jam-w-honey">Strawberry Thyme Jam w/ Honey</option><option value="strawberry-chamomile-jam">Strawberry Chamomile Jam</option><option value="peach-jam">Peach Jam</option><option value="white-peach-lemon-verbena-jam-w-honey">White Peach Lemon Verbena Jam w/ Honey</option><option value="spiced-peach-jam">Spiced Peach Jam</option><option value="white-peach-vanilla-honey-jam">White Peach Vanilla Honey Jam</option><option value="spiced-strawberry-jam">Spiced Strawberry Jam</option><option value="strawberry-chocolate-jam">Strawberry Chocolate Jam</option><option value="strawberry-kiwi-jam">Strawberry Kiwi Jam</option><option value="traditional-apple-pie-jam">Traditional Apple Pie Jam</option></optgroup><optgroup label="Fruit Butters"><option value="24-hour-apple-butter">24-Hour Apple Butter</option><option value="peach-butter">Peach Butter</option></optgroup><optgroup label="Fruit Spreads"><option value="strawberry-blackberry-fruit-spread">Strawberry Blackberry Fruit Spread</option><option value="pear-chocolate-fruit-spread">Pear Chocolate Fruit Spread</option><option value="peach-cobbler-fruit-spread">Peach Cobbler Fruit Spread</option></optgroup><optgroup label="Jellies"><option value="hot-pepper-jelly">Hot Pepper Jelly</option></optgroup><optgroup label="Pickles"><option value="mexican-pickled-carrots-taco-truck-style">Mexican Pickled Carrots - Taco Truck Style</option><option value="spicy-mustard-pickles">Spicy Mustard Pickles</option><option value="pickled-jalapeno-peppers">Pickled Jalapeño Peppers</option><option value="dilly-beans">Dilly Beans</option><option value="classic-dill-pickles">Classic Dill Pickles</option><option value="pickled-okra">Pickled Okra</option><option value="pickled-red-onions">Pickled Red Onions</option><option value="bread-and-butter-pickles">Bread &amp; Butter Pickles</option><option value="mexican-pickled-zucchini">Mexican Pickled Zucchini</option><option value="sliced-dill-pickles">Sliced Dill Pickles</option><option value="cherry-pie-pickled-cherries">Cherry Pie Pickled Cherries</option><option value="dill-pickled-carrots">Dill Pickled Carrots</option><option value="pickled-beets">Pickled Beets</option></optgroup><optgroup label="Relishes"><option value="stadium-dog-relish">Stadium Dog Relish</option><option value="caramelized-onion-relish">Caramelized Onion Relish</option><option value="smoked-pineapple-relish">Smoked Pineapple Relish</option></optgroup><optgroup label="Salsas"><option value="batch12-original-salsa">Batch12 Original Salsa</option><option value="peach-salsa">Peach Salsa</option><option value="roasted-salsa-verde">Roasted Salsa Verde</option><option value="classic-tomato-salsa">Classic Tomato Salsa</option><option value="roasted-tomato-chipotle-salsa">Roasted Tomato Chipotle Salsa</option><option value="corn-salsa-w-poblano-peppers">Corn Salsa w/ Poblano Peppers</option></optgroup><optgroup label="Sauces"><option value="tomatillo-simmer-sauce">Tomatillo Simmer Sauce</option><option value="heirloom-tomato-marinara-sauce">Heirloom Tomato Marinara Sauce</option></optgroup></select></label>
+        <label class="f" for="p-size">Jar size<select id="p-size" disabled><option>Pick a flavor first</option></select></label>
+        <label class="f" for="p-heat" id="p-heat-wrap" hidden>Heat<select id="p-heat"></select></label>
+        <label class="f small" for="p-qty">How many<input type="number" id="p-qty" min="1" max="48" value="1" inputmode="numeric"></label>
+        <button type="button" class="btn btn-gold" id="p-add">Add to order</button>
+      </div>
+      <ul class="cart" id="cart" aria-live="polite"></ul>
+      <p class="cart-empty" id="cart-empty">No jars added yet. Pick a flavor above, or browse the <a href="flavors.html#guide">Flavor Guide</a>.</p>
+      <label class="f" for="o-items">Your order (filled in for you, or type it yourself)<textarea id="o-items" name="order-items" placeholder="Example: 2 × Peach Salsa, 16 oz, Medium"></textarea></label>
+    </fieldset>
+    <fieldset><legend>Pickup or delivery?</legend>
+      <div class="radios">
+        <label><input type="radio" name="pickup-or-delivery" value="Local pickup" checked> Local pickup</label>
+        <label><input type="radio" name="pickup-or-delivery" value="Local delivery"> Local delivery</label>
+        <label><input type="radio" name="pickup-or-delivery" value="Pick up at the Sunday market"> Sunday market</label>
+      </div>
+      <label class="f" for="o-notes">Notes (gift sets, special requests, delivery address)<textarea id="o-notes" name="notes"></textarea></label>
+    </fieldset>
+    <button class="btn btn-blue" type="submit" style="justify-self:start">Send order request</button>
+    <p class="form-msg" id="orderMsg" aria-live="polite"></p>
+    <p style="color:var(--muted);font-size:.9rem">This is a request, not a payment. We’ll confirm by email before anything is final.</p>
+  </form>
+  <aside class="order-side">
+    <div class="contact-card">
+      <span class="eyebrow">How it works</span>
+      <ol class="steps-mini">
+        <li><div><b>Send your request</b><br>Choose flavors, jar sizes and quantities.</div></li>
+        <li><div><b>We confirm by email</b><br>Availability, total and timing.</div></li>
+        <li><div><b>Pick up or get it delivered</b><br>Local pickup, delivery or the Sunday market.</div></li>
+      </ol>
+    </div>
+    <div class="contact-card">
+      <h3>Questions?</h3>
+      <dl class="info">
+        <div><dt>Email</dt><dd>therealbatch12@gmail.com</dd></div>
+        <div><dt>Phone</dt><dd>703-957-8311</dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://instagram.com/TheRealBatch12">@TheRealBatch12</a></dd></div>
+      </dl>
+      <p style="margin-top:12px"><a class="btn btn-blue" href="flavors.html#guide">Browse the Flavor Guide</a></p>
+    </div>
+  </aside>
+</div></section>
+<script>
+(function(){
+  var D={"smoked-heirloom-tomato-jam": {"name": "Smoked Heirloom Tomato Jam", "sizes": ["8", "4"], "heats": []}, "peach-sriracha-jam": {"name": "Peach Sriracha Jam", "sizes": ["8", "4"], "heats": []}, "white-peach-and-raspberry-jam": {"name": "White Peach & Raspberry Jam", "sizes": ["8"], "heats": []}, "strawberry-almond-jam": {"name": "Strawberry Almond Jam", "sizes": ["8", "4"], "heats": []}, "strawberry-vanilla-jam": {"name": "Strawberry Vanilla Jam", "sizes": ["8", "4"], "heats": []}, "honey-lemon-apple-jam": {"name": "Honey Lemon Apple Jam", "sizes": ["8"], "heats": []}, "pineapple-jam": {"name": "Pineapple Jam", "sizes": ["8", "4"], "heats": []}, "apple-rosemary-jam": {"name": "Apple Rosemary Jam", "sizes": ["8"], "heats": []}, "creamsicle-jam": {"name": "Creamsicle Jam", "sizes": ["8", "4"], "heats": []}, "strawberry-thyme-jam-w-honey": {"name": "Strawberry Thyme Jam w/ Honey", "sizes": ["4"], "heats": []}, "strawberry-chamomile-jam": {"name": "Strawberry Chamomile Jam", "sizes": ["4"], "heats": []}, "peach-jam": {"name": "Peach Jam", "sizes": ["16", "8"], "heats": []}, "white-peach-lemon-verbena-jam-w-honey": {"name": "White Peach Lemon Verbena Jam w/ Honey", "sizes": ["8", "4"], "heats": []}, "spiced-peach-jam": {"name": "Spiced Peach Jam", "sizes": ["8", "4"], "heats": []}, "white-peach-vanilla-honey-jam": {"name": "White Peach Vanilla Honey Jam", "sizes": ["4"], "heats": []}, "spiced-strawberry-jam": {"name": "Spiced Strawberry Jam", "sizes": ["8", "4"], "heats": []}, "strawberry-chocolate-jam": {"name": "Strawberry Chocolate Jam", "sizes": ["8", "4"], "heats": []}, "strawberry-kiwi-jam": {"name": "Strawberry Kiwi Jam", "sizes": ["8", "4"], "heats": []}, "traditional-apple-pie-jam": {"name": "Traditional Apple Pie Jam", "sizes": ["16", "8", "4"], "heats": []}, "24-hour-apple-butter": {"name": "24-Hour Apple Butter", "sizes": ["16", "8", "4"], "heats": []}, "peach-butter": {"name": "Peach Butter", "sizes": ["16", "8"], "heats": []}, "strawberry-blackberry-fruit-spread": {"name": "Strawberry Blackberry Fruit Spread", "sizes": ["16", "8", "4"], "heats": []}, "pear-chocolate-fruit-spread": {"name": "Pear Chocolate Fruit Spread", "sizes": ["8", "4"], "heats": []}, "peach-cobbler-fruit-spread": {"name": "Peach Cobbler Fruit Spread", "sizes": ["8", "4"], "heats": []}, "hot-pepper-jelly": {"name": "Hot Pepper Jelly", "sizes": ["8", "4"], "heats": []}, "mexican-pickled-carrots-taco-truck-style": {"name": "Mexican Pickled Carrots - Taco Truck Style", "sizes": ["8"], "heats": []}, "spicy-mustard-pickles": {"name": "Spicy Mustard Pickles", "sizes": ["16"], "heats": []}, "pickled-jalapeno-peppers": {"name": "Pickled Jalape\u00f1o Peppers", "sizes": ["16"], "heats": []}, "dilly-beans": {"name": "Dilly Beans", "sizes": ["16"], "heats": []}, "classic-dill-pickles": {"name": "Classic Dill Pickles", "sizes": ["16"], "heats": []}, "pickled-okra": {"name": "Pickled Okra", "sizes": ["16"], "heats": []}, "pickled-red-onions": {"name": "Pickled Red Onions", "sizes": ["16", "8"], "heats": []}, "bread-and-butter-pickles": {"name": "Bread & Butter Pickles", "sizes": ["16"], "heats": []}, "mexican-pickled-zucchini": {"name": "Mexican Pickled Zucchini", "sizes": ["16", "8"], "heats": []}, "sliced-dill-pickles": {"name": "Sliced Dill Pickles", "sizes": ["16"], "heats": []}, "cherry-pie-pickled-cherries": {"name": "Cherry Pie Pickled Cherries", "sizes": ["16"], "heats": []}, "dill-pickled-carrots": {"name": "Dill Pickled Carrots", "sizes": ["16"], "heats": []}, "pickled-beets": {"name": "Pickled Beets", "sizes": ["16"], "heats": []}, "stadium-dog-relish": {"name": "Stadium Dog Relish", "sizes": ["16", "8"], "heats": []}, "caramelized-onion-relish": {"name": "Caramelized Onion Relish", "sizes": ["16", "8"], "heats": []}, "smoked-pineapple-relish": {"name": "Smoked Pineapple Relish", "sizes": ["8", "4"], "heats": []}, "batch12-original-salsa": {"name": "Batch12 Original Salsa", "sizes": ["16", "8"], "heats": ["Medium", "Hot"]}, "peach-salsa": {"name": "Peach Salsa", "sizes": ["16", "8"], "heats": ["Mild", "Medium", "Hot"]}, "roasted-salsa-verde": {"name": "Roasted Salsa Verde", "sizes": ["16", "8"], "heats": []}, "classic-tomato-salsa": {"name": "Classic Tomato Salsa", "sizes": ["16", "8"], "heats": ["Mild", "Medium", "Hot"]}, "roasted-tomato-chipotle-salsa": {"name": "Roasted Tomato Chipotle Salsa", "sizes": ["16", "8"], "heats": ["Mild", "Medium"]}, "corn-salsa-w-poblano-peppers": {"name": "Corn Salsa w/ Poblano Peppers", "sizes": ["16", "8"], "heats": []}, "tomatillo-simmer-sauce": {"name": "Tomatillo Simmer Sauce", "sizes": ["16", "8"], "heats": []}, "heirloom-tomato-marinara-sauce": {"name": "Heirloom Tomato Marinara Sauce", "sizes": ["16"], "heats": []}};
+  var f=document.getElementById('orderForm'),fl=document.getElementById('p-flavor'),sz=document.getElementById('p-size'),
+      hw=document.getElementById('p-heat-wrap'),ht=document.getElementById('p-heat'),qty=document.getElementById('p-qty'),
+      cartEl=document.getElementById('cart'),emptyEl=document.getElementById('cart-empty'),ta=document.getElementById('o-items'),msg=document.getElementById('orderMsg'),cart=[];
+  function opts(sel,arr,suf){sel.innerHTML='';arr.forEach(function(v){var o=document.createElement('option');o.value=v;o.textContent=v+(suf||'');sel.appendChild(o);});}
+  function pick(){var d=D[fl.value];if(!d){sz.disabled=true;opts(sz,['Pick a flavor first']);hw.hidden=true;return;}
+    sz.disabled=false;opts(sz,d.sizes,' oz');if(d.heats.length){hw.hidden=false;opts(ht,d.heats);}else hw.hidden=true;}
+  function line(it){return it.qty+' × '+it.name+', '+it.size+' oz'+(it.heat?', '+it.heat:'');}
+  function render(){cartEl.innerHTML='';cart.forEach(function(it,i){var li=document.createElement('li');var s=document.createElement('span');s.textContent=line(it);
+    var b=document.createElement('button');b.type='button';b.textContent='Remove';b.setAttribute('aria-label','Remove '+it.name);b.onclick=function(){cart.splice(i,1);render();};
+    li.appendChild(s);li.appendChild(b);cartEl.appendChild(li);});emptyEl.hidden=cart.length>0;ta.value=cart.map(line).join('\n');}
+  fl.addEventListener('change',pick);
+  document.getElementById('p-add').addEventListener('click',function(){var d=D[fl.value];if(!d){msg.textContent='Choose a flavor first.';fl.focus();return;}
+    var n=Math.max(1,parseInt(qty.value,10)||1);cart.push({name:d.name,size:sz.value,heat:d.heats.length?ht.value:'',qty:n});msg.textContent='';render();fl.value='';pick();qty.value=1;});
+  (function(){var d=document.getElementById('o-date'),t=new Date();var p=function(n){return (n<10?'0':'')+n};d.min=t.getFullYear()+'-'+p(t.getMonth()+1)+'-'+p(t.getDate());})();
+  var h=(location.hash||'').slice(1);if(h&&D[h]){fl.value=h;pick();}
+  f.addEventListener('submit',function(e){
+    if(!ta.value.trim()){e.preventDefault();msg.textContent='Please add at least one jar to your order.';return;}
+    if(!/netlify\.app$|batch12\.com$/.test(location.hostname)){e.preventDefault();msg.textContent='Preview only: order requests work on the live site at batch12.com.';}
+  });
+})();
+</script></main>
+<footer class="bottom"><div class="wrap">
+  <a class="brand" href="index.html"><img src="logo.jpg" alt=""><span>Batch 12</span></a>
+  <nav aria-label="Footer"><a href="index.html">Home</a><a href="flavors.html">Flavor Guide</a><a href="farm-to-jar.html">Farm to Jar</a><a href="story.html">Our Story</a><a href="find-us.html">Where to Buy</a><a href="order.html">Order</a><a href="https://instagram.com/TheRealBatch12">Instagram</a></nav>
+  <small>© 2026 Batch 12 · Small-batch preserves from Haymarket, Virginia · Life is short. Eat good food.</small>
+</div></footer>
+</body>
+</html>
