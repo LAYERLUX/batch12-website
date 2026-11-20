@@ -20,3 +20,6 @@ The website for **Batch 12**, small-batch jams, salsas and pickles from Haymarke
 
 ## Forms
 The email sign-up (`newsletter`) and the order request (`order-request`) use **Netlify Forms**. Submissions appear in Netlify under **Forms**, and email notifications go to therealbatch12@gmail.com. Keep the `data-netlify="true"` attribute and the hidden `form-name` field on each form, or Netlify stops collecting them.
+
+## Copyright
+© 2026 Batch 12. All rights reserved. The text, photos, logo and design in this repository may not be copied or reused without permission.
